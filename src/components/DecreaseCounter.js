@@ -1,7 +1,26 @@
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { decreaseCounter } from "../redux/counterActions";
+import { connect } from "react-redux";
 
-export default class DecreaseCounter extends Component {
+class DecreaseCounter extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <button
+          onClick={(e) => {
+            this.props.dispatch(decreaseCounter());
+          }}
+        >
+          1 azalt
+        </button>
+      </div>
+    );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return { actions: bindActionCreators(DecreaseCounter, dispatch) };
+}
+
+export default connect(mapDispatchToProps)(DecreaseCounter);

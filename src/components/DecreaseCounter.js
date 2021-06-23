@@ -12,7 +12,7 @@ class DecreaseCounter extends Component {
             this.props.dispatch(decreaseCounter());
           }}
         >
-          1 azalt
+          decrease by 1
         </button>
       </div>
     );

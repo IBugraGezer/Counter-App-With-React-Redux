@@ -12,7 +12,7 @@ class IncreaseByTwoCounter extends Component {
             this.props.dispatch(increaseByTwoCounter());
           }}
         >
-          2 arttır
+          increase by 2
         </button>
       </div>
     );

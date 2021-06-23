@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Counter from "./components/Counter";
-import IncreaseCounter from "./components/DecreateCounter";
-import DecreaseCounter from "./components/DecreateCounter";
+import IncreaseCounter from "./components/IncreaseCounter";
+import DecreaseCounter from "./components/DecreaseCounter";
 import IncreaseByTwoCounter from "./components/IncreaseByTwoCounter";
 
 function App() {
